@@ -1,4 +1,85 @@
 site_name: My site
+site_description: Comprehensive guide.
+site_author: Eugene
 site_url: https://github.com/UkraineCoder/UkraineCoder.github.io
+docs_dir: docs
+site_dir: public_docs
+
+# Repository
+repo_name: UkraineCoder/UkraineCoder.github.io
+repo_url: https://github.com/UkraineCoder/UkraineCoder.github.io/
+edit_uri: ""
+
+# Copyright
+copyright: Copyright &copy; 2024 Eugene
+
+# Theme
 theme:
   name: material
+  custom_dir: docs/overrides
+  logo: assets/logo_one.png
+  favicon: assets/favicon.jpg
+  language: uk
+
+  # Вмикаємо темну тему за замовчуванням
+  palette:
+    scheme: slate
+    primary: custom
+    accent: custom
+
+  features:
+    - navigation.sections
+    - navigation.top
+    - navigation.tracking
+    - navigation.indexes
+    - search.highlight
+    - search.share
+    - search.suggest
+    - content.code.copy
+    - content.tabs.link
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+extra_css:
+  - stylesheets/extra.css
+
+# Extensions
+markdown_extensions:
+  - tables
+  - attr_list
+  - def_list
+  - footnotes
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - toc:
+      permalink: false
+      toc_depth: 0
+
+# Plugins
+plugins:
+  - search:
+      lang: uk
+  - minify:
+      minify_html: true
+      minify_js: true
+      minify_css: true
+  - git-revision-date-localized:
+      type: datetime
+
+nav:
+  - Home: index.md
+  - Getting Started: getting-started.md
+  - User Guide:
+    - Installation: guide/installation.md
+    - Configuration: guide/configuration.md
+  - About: about.md
+
+

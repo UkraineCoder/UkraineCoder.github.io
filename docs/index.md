@@ -1,8 +1,15 @@
+---
+title: Головна
+---
+
 # Welcome to MkDocs
 
 For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
 ## Commands
+
+- [x] Виконане завдання
+- [ ] Невиконане завдання
 
 * `mkdocs new [dir-name]` - Create a new project.
 * `mkdocs serve` - Start the live-reloading docs server.
@@ -15,3 +22,8 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
     docs/
         index.md  # The documentation homepage.
         ...       # Other markdown pages, images and other files.
+
+
+```python
+print("Hello World")
+```

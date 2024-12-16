@@ -1,0 +1,153 @@
+/* Налаштування кольорів */
+[data-md-color-scheme="slate"] {
+    --md-default-bg-color: #1a1a1f;
+    --md-default-fg-color: #eaeaea;
+    --md-typeset-color: #eaeaea;
+}
+
+/* Оновлений хедер без підсвітки */
+.md-header {
+    background-color: rgba(22, 22, 26, 0.9);
+    box-shadow: none;
+}
+
+/* Sidebar */
+
+.md-nav--primary .md-nav__title {
+    padding-bottom: 10px;
+}
+
+/* Стилізація лівого сайдбару */
+.md-nav {
+    font-size: 0.9rem;
+}
+
+/* Основні пункти навігації */
+.md-nav__item {
+    margin: 8px 0;
+}
+
+/*Пункти меню*/
+.md-nav__link {
+    color: rgba(234, 234, 234, 0.85) !important;
+    padding: 4px 8px;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+.md-nav__link:hover {
+    color: #3DFC3C !important;
+    background-color: rgba(61, 252, 60, 0.08);
+    transform: translateX(4px);
+}
+
+/* Активний пункт */
+.md-nav__link--active {
+    color: #3DFC3C !important;
+    font-weight: 600;
+    background-color: rgba(61, 252, 60, 0.1) !important;
+}
+
+.md-nav__link {
+    position: relative;
+    padding-left: 16px;
+}
+
+.md-nav__link::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 4px;
+    height: 4px;
+    background-color: #3DFC3C;
+    border-radius: 50%;
+    opacity: 0;
+    transition: all 0.2s ease;
+}
+
+.md-nav__link:hover::before,
+.md-nav__link--active::before {
+    opacity: 1;
+}
+
+/* Заголовок секції */
+.md-nav__title {
+    color: #eaeaea;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    padding: 8px;
+}
+
+/* Підменю */
+.md-nav__list .md-nav__list {
+    margin-left: 4px;
+    border-left: 2px solid rgba(61, 252, 60, 0.15);
+}
+
+/* Контент */
+
+/* Посилання в статті */
+.md-content__inner a{
+    color: #3DFC3C;
+}
+
+.md-content__inner a:hover {
+    color: #3DFC3C;
+    border-bottom: 1px solid transparent;
+    border-bottom-color: #3DFC3C;
+}
+
+/* Стилізація коду */
+.highlight {
+    background-color: #222228 !important;
+    border-radius: 8px !important;
+    border: 1px solid rgba(61, 252, 60, 0.08);
+}
+
+.highlight pre {
+    padding: 16px !important;
+}
+
+/* Покращення типографіки */
+.md-typeset {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3,
+.md-typeset h4 {
+    color: #eaeaea;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+/* Search */
+.md-search__input {
+    background-color: rgba(255, 255, 255, 0.08);
+    border-radius: 8px;
+}
+
+/* Прибираємо фон з елементів пошуку */
+.md-search__overlay,
+.md-search__form {
+    background: none;
+}
+
+/* Стилізація блоків примітки */
+/*.admonition {*/
+/*    border-radius: 8px !important;*/
+/*    border: none !important;*/
+/*    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08) !important;*/
+/*}*/
+
+/* Misc */
+
+/* Стилізація виділеного тексту */
+::selection {
+    background-color: rgba(61, 252, 60, 0.2);
+    color: #ffffff;
+}
